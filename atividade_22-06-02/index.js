@@ -1,8 +1,6 @@
 const fs = require('fs')
 
-
 const conteudo = ` Estartando Devs \n Victor Almeida \n 02/06/2022`
-
 
 const writeFileAsync = (fileName, content) =>{
     fs.writeFile(`${fileName}.txt`, content, err => {
@@ -19,7 +17,6 @@ const writeFileSync = (fileName, content) =>{
         }
     })
 }
-
 
 for(i=1; i<= 5; i++){
     writeFileAsync(`Async-text-${i}`, conteudo)
