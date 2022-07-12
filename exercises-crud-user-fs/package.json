@@ -1,0 +1,19 @@
+{
+  "name": "exercises-crud-user-fs",
+  "version": "1.0.0",
+  "main": "src/cli/index.js",
+  "license": "MIT",
+  "author": "ED Team",
+  "scripts": {
+    "test": "jest --runInBand",
+    "start": "node src/cli",
+    "test:evaluation": "jest --json --outputFile=/tmp/result.json"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1",
+    "mock-fs": "^5.1.2"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}

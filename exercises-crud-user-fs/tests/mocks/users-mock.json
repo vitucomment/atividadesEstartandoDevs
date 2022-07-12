@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1654822963639,
+    "name": "João das Couves",
+    "email": "jao@gmail.com",
+    "password": "123456",
+    "phone": "21988884444"
+  },
+  {
+    "id": 1654826575603,
+    "name": "Fulano Beltrano",
+    "email": "fulano@gmail.com",
+    "password": "654321",
+    "phone": "21977774444"
+  }
+]
