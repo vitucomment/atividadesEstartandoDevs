@@ -1,0 +1,17 @@
+{
+  "name": "exercises-sync-async-carnival-dates",
+  "version": "1.0.0",
+  "description": "Exercício de criar um programa que retorna as datas dos feriados de carnaval Estartando Devs ",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:evaluation": "jest --json --outputFile=/tmp/result.json"
+  },
+  "keywords": [],
+  "author": "ED Team",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "jest": "^28.1.0"
+  }
+}
