@@ -11,7 +11,7 @@ const alunosNotas = [
 ]
 
 //_______________________Metodo 'forEach'_______________________
-console.log('____EXERCICIO RESOLVIDO UTILIZANDO FOREACH____')
+console.log('____EXERICIO RESOLVIDO UTILIZANDO FOREACH____')
 alunosNotas.forEach((aluno)=>{
     let media = 0
     let soma = 0
@@ -24,7 +24,7 @@ console.log(alunosNotas)
 
 
 //_______________________Metodo 'map'_______________________
-console.log('____EXERCICIO RESOLVIDO UTILIZANDO MAP____')
+console.log('____EXERICIO RESOLVIDO UTILIZANDO MAP____')
 const alunosNotasMedias = alunosNotas.map(function(aluno){
     let media = 0
     let soma = 0
@@ -38,7 +38,7 @@ console.log(alunosNotasMedias[0])
 
 
 //_______________________Metodo 'forEach' dentro do 'map'_______________________
-console.log('____EXERCICIO RESOLVIDO UTILIZANDO FOREACH DENTRO DO MAP____')
+console.log('____EXERICIO RESOLVIDO UTILIZANDO FOREACH DENTRO DO MAP____')
 const alunosComMedia = alunosNotas.map(({nome, notas}) => {
     let somaDasNotas = 0
     notas.forEach((nota) => somaDasNotas += nota)
