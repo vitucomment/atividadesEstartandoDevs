@@ -1,0 +1,15 @@
+{
+  "name": "exercises-sync-async",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:evaluation": "jest --json --outputFile=/tmp/result.json"
+  },
+  "author": "ED Team",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "jest": "^28.1.0"
+  }
+}
