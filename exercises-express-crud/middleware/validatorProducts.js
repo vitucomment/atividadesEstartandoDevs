@@ -1,24 +1,6 @@
 const joi = require('joi')
 
 
-
-const userQuerySchema = joi.object({
-    id: joi.string().required()
-})
-
-const userBodySchema = joi.object({
-    id: joi.number().required()
-})
-
-const userDefaultBodySchema = joi.object({
-    id: joi.number().required(),
-    name: joi.string().required(),
-    birthDate: joi.string().required()
-})
-
-
-
-
 const tshirtSizeQuerySchema = joi.object({
     size: joi.string().required()
 })
@@ -34,9 +16,7 @@ const tshirtIdQuerySchema = joi.object({
 })
 
 module.exports = {
-    userQuerySchema,
-    userBodySchema,
-    userDefaultBodySchema,
     tshirtSizeQuerySchema,
     tshirtDefaultBodySchema,
-    tshirtIdQuerySchema}
+    tshirtIdQuerySchema
+}

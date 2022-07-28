@@ -1,14 +1,15 @@
-const express = require('express')
-const app = express()
-const userRouter = require('./routes/userRoutes.js')
-const productRouter = require('./routes/productsRoutes.js')
+const express = require('express');
+const swaggerUi = require('swagger-ui-express');
+const app = express();
+const userRouter = require('./routes/userRoutes');
+const productRouter = require('./routes/productsRoutes');
+const swaggerFile = require('./swagger/swagger_output.json');
 
-const PORT = process.env.PORT || 3000
+app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile));
+app.use(express.json());
+app.listen(8080, () => {
+    console.log('Server up...')
+});
 
-app.use(express.json())
-app.use('/api', userRouter)
-app.use('/api/products', productRouter)
-
-app.listen(PORT, () =>{
-    console.log(`Server on: http://localhost/${PORT}`)
-})
+app.use('/api', userRouter);
+app.use('/api/products', productRouter);

@@ -1,14 +1,14 @@
-const express = require('express')
+const express = require('express');
 const router = express.Router()
 const { createValidator } = require('express-joi-validation')
-const validator = createValidator()
-const { tshirtSizeQuerySchema, tshirtDefaultBodySchema, tshirtIdQuerySchema } = require('../middleware/validator.js')
-const controller = require('../controllers/productsController.js')
+const validator = createValidator({});
+const { tshirtBySizeQuerySchema, tshirtQuerySchema } = require('../middleware/validators/tshirtValidator');
+const controller = require('../controllers/tshirtController');
 
 
-router.get('/tshirt', validator.query(tshirtSizeQuerySchema), controller.getProductsBySize)
-router.post('/tshirt', validator.body(tshirtDefaultBodySchema), controller.createTshirt)
-router.put('/tshirt', validator.body(tshirtDefaultBodySchema), controller.updateTshirt)
-router.delete('/tshirt', validator.query(tshirtIdQuerySchema), controller.deleteTshirt)
+router.get('/tshirt', validator.query(tshirtQuerySchema), controller.getTshirt);
+router.get('/tshirt/by-size', validator.query(tshirtBySizeQuerySchema), controller.getTshirtBySize);
+
+
 
 module.exports = router

@@ -1,39 +1,32 @@
 const dataTshirt = [
     {
         id: 1,
-        size: "G",
-        description: "Dragonball"
+        size: 'small',
+        description: 'pokemon'
     },
     {
         id: 2,
-        size: "M",
-        description: "Pokemon"
+        size: 'large',
+        description: 'soccer'
     },
     {
         id: 3,
-        size: "P",
-        description: "Vingadores"
+        size: 'small',
+        description: 'jokenpo'
     },
     {
         id: 4,
-        size: "P",
-        description: "Formiguinha"
+        size: 'medium',
+        description: 'animals'
     },
     {
         id: 5,
-        size: "G",
-        description: "BlackDesert"
+        size: 'large',
+        description: 'dragonBall'
     },
-    {
-        id: 6,
-        size: "M",
-        description: "Priston Tale"
-    },
-    {
-        id: 7,
-        size: "M",
-        description: "Programação"
-    },
-]
 
-module.exports = { dataTshirt }
+];
+
+module.exports = {
+    dataTshirt,
+}
